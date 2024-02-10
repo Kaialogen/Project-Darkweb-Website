@@ -79,6 +79,16 @@ app.get('/download/:filename', (req, res) => {
   }
 });
 
+// Logout endpoint
+app.get('/logout', (req, res) => {
+    req.session.destroy(err => {
+      if(err) {
+        return console.log(err);
+      }
+      res.redirect('/login.html'); // Redirect to login page after logout
+    });
+  });
+  
 // Start server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

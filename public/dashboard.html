@@ -5,11 +5,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="login-container">
     <h1>Welcome to the Dashboard</h1>
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="myFile">
         <input type="submit" value="Upload">
     </form>
     <!-- Add links to download files or list them dynamically -->
+    <a href="/logout"><button>Logout</button></a>
+    </div>
 </body>
 </html>

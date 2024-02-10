@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    height: 100%;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: purple;
 }
 
 h1 {
@@ -19,5 +20,47 @@ button {
 }
 
 button:hover {
+    background-color: #0056b3;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.login-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
     background-color: #0056b3;
 }
