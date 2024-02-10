@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 // Set storage engine for file uploads
 const storage = multer.diskStorage({
