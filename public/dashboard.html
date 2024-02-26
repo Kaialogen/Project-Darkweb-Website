@@ -4,15 +4,27 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="login-container">
-    <h1>Welcome to the Dashboard</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="myFile">
-        <input type="submit" value="Upload">
-    </form>
-    <!-- Add links to download files or list them dynamically -->
-    <a href="/logout"><button>Logout</button></a>
+        <h1>Welcome to the Dashboard</h1>
+        <p></p>
+        <h2>Uploads</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="myFile">
+            <input type="submit" value="Upload">
+        </form>
+
+        <div>
+            <h2> Downloads </h2>
+            <a href="/download/example1.docx">Download document</a>
+            <a href="/download/example2.png">Download PNG</a>
+        </div>
+    
+        <div>
+            <h2>Logout</h2>
+            <a href="/logout"><button>Logout</button></a>
+        </div>
     </div>
 </body>
 </html>
