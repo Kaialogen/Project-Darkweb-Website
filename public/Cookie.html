@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Cookie</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="/dashboard.html">Dashboard</a></li>
+                <li><a href="/Javascript.html">Javascript Test</a></li>
+                <li><a href="/Cookie.html">Cookie</a></li>
+            </ul>
+        </nav>
+
+        <div class="login-container">
+            <button onclick="setCookie()">Set Cookie</button>
+            <button onclick="destroyCookie()">Destroy Cookie</button>
+        </div>
+                
+            <script>
+                function setCookie() {
+                    document.cookie = "myCookie=Hello World";
+                    location.reload();
+                }
+
+                function destroyCookie() {
+                    document.cookie = "myCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                    location.reload();
+                }
+            </script>
+    </body>
+</html>
